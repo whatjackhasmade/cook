@@ -1,18 +1,35 @@
 import Recipe from "@/components/Recipe";
 import { recipes } from "@/data/recipes";
+import { Metadata, ResolvingMetadata } from "next";
 
-export default async function RecipeRoute({ params }: { params: { slug: string } }) {
-  const recipe = recipes.find((recipe) => recipe.slug === params.slug);
+interface Props {
+	params: { slug: string };
+}
 
-  if (!recipe) {
-    return <h1>Recipe not found</h1>;
-  }
+function getRecipe(slug: string) {
+	return recipes.find((recipe) => recipe.slug === slug);
+}
 
-  return <Recipe recipe={recipe} />;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+	const recipe = getRecipe(params.slug);
+
+	return {
+		title: recipe ? `${recipe.emojis} ${recipe.title}` : "Recipe not found",
+	};
+}
+
+export default async function RecipeRoute({ params }: Props) {
+	const recipe = getRecipe(params.slug);
+
+	if (!recipe) {
+		return <h1>Recipe not found</h1>;
+	}
+
+	return <Recipe recipe={recipe} />;
 }
 
 export async function generateStaticParams() {
-  return recipes.map((recipe) => ({
-    slug: recipe.slug,
-  }));
+	return recipes.map((recipe) => ({
+		slug: recipe.slug,
+	}));
 }
