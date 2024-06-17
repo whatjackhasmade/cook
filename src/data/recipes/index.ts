@@ -27,6 +27,7 @@ export type Step = {
 export type Recipe = {
 	description?: string;
 	emojis?: string;
+	inspiration?: string[];
 	ingredients: Ingredient[];
 	related?: RecipeSlug[];
 	// Number of servings yielded by the recipe

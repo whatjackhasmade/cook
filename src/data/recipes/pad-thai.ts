@@ -2,6 +2,7 @@ import { MeasurementUnit, RecipeSlug } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
+	insipiration: ["https://tastesbetterfromscratch.com/pad-thai/"],
 	slug: RecipeSlug.PadThai,
 	title: "Pad thai",
 	ingredients: [
