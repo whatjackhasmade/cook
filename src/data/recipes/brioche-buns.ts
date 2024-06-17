@@ -2,6 +2,7 @@ import { MeasurementUnit, RecipeSlug } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
+	youtube: "https://www.youtube.com/watch?v=A6mwf6aMMo0",
 	emojis: "🍔",
 	ingredients: [
 		{

@@ -12,7 +12,7 @@ export interface RecipeFormSchema {
 function Recipe() {
 	return (
 		<>
-			<Tabs defaultValue="ingredients">
+			<Tabs className="mb-20" defaultValue="ingredients">
 				<TabsList className="mb-8 mt-8">
 					<TabsTrigger value="ingredients">Ingredients</TabsTrigger>
 					<TabsTrigger value="steps">Steps</TabsTrigger>

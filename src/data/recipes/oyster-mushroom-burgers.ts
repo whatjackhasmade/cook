@@ -5,7 +5,9 @@ const recipe: Recipe = {
 	slug: RecipeSlug.OysterMushroomBurgers,
 	title: "Oyster mushroom burgers",
 	ingredients: [],
-	steps: [],
+	steps: [
+		`[Whip up some burger buns](/${RecipeSlug.BriocheBuns}) to serve with this recipe.`,
+	],
 	emojis: `🍔 🍄`,
 };
 

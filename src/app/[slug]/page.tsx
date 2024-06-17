@@ -1,6 +1,6 @@
 import Recipe from "@/components/Recipe";
 import { recipes } from "@/data/recipes";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 
 interface Props {
 	params: { slug: string };
