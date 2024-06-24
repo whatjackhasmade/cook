@@ -20,15 +20,16 @@ export type Ingredient = {
 	unit: MeasurementUnit;
 };
 
-export type Step = {
-	content: string;
+export type IngredientGroup = {
+	name: string;
+	ingredients: Ingredient[];
 };
 
 export type Recipe = {
 	description?: string;
 	emojis?: string;
 	inspiration?: string[];
-	ingredients: Ingredient[];
+	ingredients: (Ingredient | IngredientGroup)[];
 	related?: RecipeSlug[];
 	// Number of servings yielded by the recipe
 	servingSize?: number;
