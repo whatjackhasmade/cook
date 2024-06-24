@@ -86,7 +86,7 @@ const recipe: Recipe = {
 			quantity: "1",
 		},
 		{
-			name: "TCapers",
+			name: "Capers",
 			unit: MeasurementUnit.Teaspoons,
 			quantity: "2",
 			optional: true,
