@@ -70,6 +70,7 @@ const recipe: Recipe = {
 		"Serve the sweet potatoes and fish with mayonnaise or sweet chilli sauce",
 	],
 	title: "Sweet potato fries and fish",
+	youtube: "https://youtu.be/ZCXX7Dea6eA?t=387",
 };
 
 export default recipe;
