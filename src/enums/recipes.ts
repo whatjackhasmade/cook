@@ -5,6 +5,7 @@ export enum RecipeSlug {
 	ChipotleMushroomFajitas = "chipotle-mushroom-fajitas",
 	Fajitas = "fajitas",
 	GreenThaiCurry = "green-thai-curry",
+	LemonBars = "lemon-bars",
 	OysterMushroomBurgers = "oyster-mushroom-burgers",
 	PadThai = "pad-thai",
 	RedThaiCurry = "red-thai-curry",
