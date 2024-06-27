@@ -1,8 +1,8 @@
-/* eslint-disable sort-keys */
 import { MeasurementUnit, RecipeSlug } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
+	colour: "rgb(255,99,71)",
 	description:
 		"A rich and luxurious veggie-packed bolognese. You won't miss the meat in this beauty.",
 	emojis: "🍄 🍝",
@@ -29,13 +29,13 @@ const recipe: Recipe = {
 		},
 		{
 			name: "Salt",
-			quantity: "1 pinch",
-			unit: MeasurementUnit.Count,
+			quantity: "1",
+			unit: MeasurementUnit.Pinch,
 		},
 		{
 			name: "Black pepper",
-			quantity: "1 pinch",
-			unit: MeasurementUnit.Count,
+			quantity: "1",
+			unit: MeasurementUnit.Pinch,
 		},
 		{
 			name: "Chopped tomatoes",
@@ -43,12 +43,10 @@ const recipe: Recipe = {
 			unit: MeasurementUnit.Count,
 		},
 		{
-			// eslint-disable-next-line sort-keys
 			name: "All purpose seasoning",
-
 			optional: true,
-			quantity: "1 pinch",
-			unit: MeasurementUnit.Count,
+			quantity: "1",
+			unit: MeasurementUnit.Pinch,
 		},
 		{
 			name: "Celery",

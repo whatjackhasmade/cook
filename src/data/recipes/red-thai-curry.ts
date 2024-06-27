@@ -4,6 +4,7 @@ import { Recipe } from ".";
 import greenThaiCurry from "./green-thai-curry";
 
 const recipe: Recipe = {
+	colour: "rgb(255,0,0)",
 	slug: RecipeSlug.RedThaiCurry,
 	title: "Red thai curry",
 	ingredients: greenThaiCurry.ingredients.map((ingredient) => {

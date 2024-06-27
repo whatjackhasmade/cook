@@ -2,6 +2,7 @@ import { MeasurementUnit, RecipeSlug } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
+	colour: "rgb(255,127,80)",
 	slug: RecipeSlug.OysterMushroomBurgers,
 	title: "Oyster mushroom burgers",
 	ingredients: [

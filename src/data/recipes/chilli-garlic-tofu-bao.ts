@@ -2,6 +2,7 @@ import { MeasurementUnit, RecipeSlug } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
+	colour: "rgb(220,20,60)",
 	emojis: "🌶️ 🍞",
 	ingredients: [
 		{

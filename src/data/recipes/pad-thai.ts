@@ -2,6 +2,7 @@ import { MeasurementUnit, RecipeSlug } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
+	colour: "rgb(46,139,87)",
 	inspiration: ["https://tastesbetterfromscratch.com/pad-thai/"],
 	slug: RecipeSlug.PadThai,
 	title: "Pad thai",

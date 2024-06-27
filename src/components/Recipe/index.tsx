@@ -4,6 +4,7 @@ import Ingredients from "./Ingredients";
 import { withRecipeContext } from "./context";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Steps from "./Steps";
+import RecipeFooter from "./Footer";
 
 export interface RecipeFormSchema {
 	ingredients: string[];
@@ -24,6 +25,7 @@ function Recipe() {
 					<Steps />
 				</TabsContent>
 			</Tabs>
+			<RecipeFooter />
 		</>
 	);
 }
