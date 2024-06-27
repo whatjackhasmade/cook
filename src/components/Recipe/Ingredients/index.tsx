@@ -27,6 +27,7 @@ function IngredientCheckbox({ ingredient }: { ingredient: Ingredient }) {
 						[MeasurementUnit.Tablespoons]: " tbsp",
 						[MeasurementUnit.Teaspoons]: " tsp",
 						[MeasurementUnit.Litres]: "l",
+						[MeasurementUnit.Pinch]: " pinch",
 					}[ingredient.unit]
 				}{" "}
 				{ingredient.name}
