@@ -1,0 +1,16 @@
+.card-with-colour {
+	.card {
+		transition: border-color 0.2s ease-in-out;
+	}
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-color: var(--recipe-colour, inherit);
+		outline-color: var(--recipe-colour, inherit);
+
+		.card {
+			border-color: var(--recipe-colour, inherit);
+		}
+	}
+}

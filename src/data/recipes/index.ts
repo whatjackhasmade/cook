@@ -6,6 +6,7 @@ import chilliGarlicTofuBao from "./chilli-garlic-tofu-bao";
 import chipotleMushroomFajitas from "./chipotle-mushroom-fajitas";
 import fajitas from "./fajitas";
 import greenThaiCurry from "./green-thai-curry";
+import lemonBars from "./lemon-bars";
 import oysterMushroomBurgers from "./oyster-mushroom-burgers";
 import padThai from "./pad-thai";
 import redThaiCurry from "./red-thai-curry";
@@ -25,7 +26,13 @@ export type IngredientGroup = {
 	ingredients: Ingredient[];
 };
 
+export type StepGroup = {
+	name: string;
+	steps: string[];
+};
+
 export type Recipe = {
+	colour?: string;
 	description?: string;
 	emojis?: string;
 	inspiration?: string[];
@@ -34,7 +41,7 @@ export type Recipe = {
 	// Number of servings yielded by the recipe
 	servingSize?: number;
 	slug: RecipeSlug;
-	steps: string[];
+	steps: (string | StepGroup)[];
 	// Time in minutes
 	time?: number;
 	title: string;
@@ -48,6 +55,7 @@ export const recipes: Recipe[] = [
 	chipotleMushroomFajitas,
 	fajitas,
 	greenThaiCurry,
+	lemonBars,
 	oysterMushroomBurgers,
 	padThai,
 	redThaiCurry,

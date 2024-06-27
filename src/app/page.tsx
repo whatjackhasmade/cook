@@ -8,15 +8,28 @@ import {
 } from "@/components/ui/card";
 import { recipes } from "@/data/recipes";
 import Link from "next/link";
+import { CSSProperties } from "react";
 
 export default function Home() {
 	return (
 		<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-8">
 			{recipes.map((recipe) => (
-				<Link href={`/${recipe.slug}`} key={recipe.slug}>
-					<Card>
+				<Link
+					href={`/${recipe.slug}`}
+					key={recipe.slug}
+					className="card-with-colour"
+					style={
+						{
+							"--recipe-colour": recipe.colour,
+						} as CSSProperties
+					}
+				>
+					<Card className="card">
 						<CardHeader>
-							<CardTitle>{recipe.title}</CardTitle>
+							<CardTitle className="flex gap-2 items-center justify-between	">
+								<span>{recipe.title}</span>{" "}
+								<span className="whitespace-nowrap">{recipe.emojis}</span>
+							</CardTitle>
 						</CardHeader>
 						<CardContent>
 							<CardDescription>{recipe.description}</CardDescription>
