@@ -1,5 +1,6 @@
 import { MeasurementUnit, RecipeSlug } from "@/enums";
 
+import baguettes from "./baguettes";
 import briocheBuns from "./brioche-buns";
 import cauliflowerMushroomBolognese from "./cauliflower-mushroom-bolognese";
 import chilliGarlicTofuBao from "./chilli-garlic-tofu-bao";
@@ -49,6 +50,7 @@ export type Recipe = {
 };
 
 export const recipes: Recipe[] = [
+	baguettes,
 	briocheBuns,
 	cauliflowerMushroomBolognese,
 	chilliGarlicTofuBao,
