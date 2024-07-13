@@ -33,6 +33,7 @@ export type StepGroup = {
 };
 
 export type Recipe = {
+	// Colour associated with the recipe in hex format
 	colour?: string;
 	description?: string;
 	emojis?: string;
