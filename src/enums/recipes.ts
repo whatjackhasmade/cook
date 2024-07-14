@@ -1,4 +1,5 @@
 export enum RecipeSlug {
+	Baguettes = "baguettes",
 	BriocheBuns = "brioche-buns",
 	CauliflowerMushroomBolognese = "cauliflower-mushroom-bolognese",
 	ChilliGarlicTofuBao = "chilli-garlic-tofu-bao",

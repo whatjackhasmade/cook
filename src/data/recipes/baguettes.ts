@@ -2,8 +2,8 @@ import { MeasurementUnit, RecipeSlug } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
-	youtube: "https://www.youtube.com/watch?v=A6mwf6aMMo0",
-	emojis: "🍔",
+	youtube: "https://www.youtube.com/watch?v=bxXZVNc4SVw",
+	emojis: "🥖",
 	ingredients: [
 		{
 			name: "Poolish",
@@ -57,7 +57,7 @@ const recipe: Recipe = {
 			],
 		},
 	],
-	slug: RecipeSlug.BriocheBuns,
+	slug: RecipeSlug.Baguettes,
 	steps: [
 		`Step 1
 			Make the poolish: The morning of the day before you plan to bake the baguettes, combine the ⅛ teaspoon yeast and 60 grams/¼ cup water (at 75 degrees to 80 degrees) in a plastic lidded container (preferably quart-size, or anything with straight sides and a similar capacity) and stir briefly to dissolve the yeast. Add the flour and mix, scraping along the sides of the container, until thoroughly combined and you have a thick, sticky paste. Smooth the surface, cover and mark the height of the mixture on the side of the container using a tape or rubber band. Let sit at warm room temperature (preferably around 75 degrees) until it triples in volume, and the surface, which should teem with fine bubbles, is slightly domed, 6 to 7 hours (but possibly more or less depending on the ambient temperature).
@@ -114,8 +114,8 @@ const recipe: Recipe = {
 			Baguettes are best eaten within several hours of baking, but you can prolong their life by storing the loaves in a paper bag. To revive stale bread, spray the crust lightly with water and place in a 400-degree oven for about 7 minutes.
 			You'll need a 4-by-20-inch wooden transfer peel for moving the loaves and a 13-by 20-inch wooden board for sliding them into the oven: Both can be bought online from a specialty baking site, or you can visit your local hardware or home improvement store and have pieces cut from ¼-inch plywood. A rimless baking sheet or a pizza peel also work, but make sure they're at least 18 inches long and 12 inches wide.`,
 	],
-	time: 60,
-	title: "Brioche buns",
+	time: 1440,
+	title: "Baguettes",
 };
 
 export default recipe;
