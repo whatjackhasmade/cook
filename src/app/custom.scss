@@ -1,4 +1,6 @@
 .card-with-colour {
+	text-align: left;
+
 	.card {
 		transition: border-color 0.2s ease-in-out;
 	}
@@ -11,6 +13,12 @@
 
 		.card {
 			border-color: var(--recipe-colour, inherit);
+		}
+	}
+
+	&.checked {
+		.card {
+			border-color: white;
 		}
 	}
 }

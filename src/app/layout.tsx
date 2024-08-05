@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./custom.scss";
 import "./globals.css";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Header from "@/components/Header";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -32,7 +33,8 @@ export default function RootLayout({
 				disableTransitionOnChange
 			>
 				<body className={cn(fontSans.variable)}>
-					<div className=" max-w-7xl mx-auto">
+					<div className="max-w-7xl mx-auto">
+						<Header />
 						<Breadcrumbs />
 						{children}
 					</div>
